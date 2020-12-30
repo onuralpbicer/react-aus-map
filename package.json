@@ -1,0 +1,39 @@
+{
+    "name": "react-aus-map",
+    "version": "1.0.0",
+    "description": "A react component that renders an interactive SVG map of Australia",
+    "main": "build/index.js",
+    "module": "build/index.es.js",
+    "typings": "build/index.d.ts",
+    "files": [
+        "build"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "del /f /S /q build\\* && rmdir /s /q build && rollup -c",
+        "prepare": "npm run build",
+        "prepack": "npm run build"
+    },
+    "author": "Onur",
+    "license": "ISC",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^17.0.0",
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-node-resolve": "^11.0.0",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "rollup": "^2.34.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^3.1.8",
+        "rollup-plugin-typescript2": "^0.29.0",
+        "typescript": "^4.1.3"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "^4.10.0",
+        "clsx": "^1.1.1",
+        "react": ">=17.0.1",
+        "react-dom": ">=17.0.1"
+    }
+}
