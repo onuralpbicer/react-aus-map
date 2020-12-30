@@ -2,7 +2,9 @@
 
 A react component that renders an SVG map of Australia
 
-Inspired by [react-australia-map](https://www.npmjs.com/package/react-australia-map). There are a couple reasons why I decided to make this component. The original react-austrlaia-map component customizes the states using a customize prop that is a one big object to pass to the internals. With this approach, since the object options were not documented or typed with TypeScript, customizing was not an easy task. This component is written fully in TypeScript, and uses a callback for the per-state customization which exposes the state's name and it's hover status.
+Inspired by [react-australia-map](https://www.npmjs.com/package/react-australia-map). The json with the svg dimensions were taken directly from that project. I don't claim any ownership of that file, I am just consuming it within my project.
+
+There are a couple reasons why I decided to make this component. The original react-austrlaia-map component customizes the states using a customize prop that is a one big object to pass to the internals. With this approach, since the object options were not documented or typed with TypeScript, customizing was not an easy task. This component is written fully in TypeScript, and uses a callback for the per-state customization which exposes the state's name and it's hover status.
 
 It can also be used as a controlled component using hoveredState and setHoveredState props. If those props are not supplied, internal logic is used to keep track of the hovered status.
 

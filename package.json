@@ -35,5 +35,13 @@
         "clsx": "^1.1.1",
         "react": ">=17.0.1",
         "react-dom": ">=17.0.1"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/onuralpbicer/react-aus-map.git"
+    },
+    "bugs": {
+        "url": "https://github.com/onuralpbicer/react-aus-map/issues"
+    },
+    "homepage": "https://github.com/onuralpbicer/react-aus-map#readme"
 }
