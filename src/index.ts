@@ -2,6 +2,6 @@ import {
     default as AustraliaMap,
     AustraliaMapProps,
 } from './components/AustraliaMap'
-import { States } from './model/model'
+import { States, CallbackPayload } from './model/model'
 
-export { AustraliaMap, AustraliaMapProps, States }
+export { AustraliaMap, AustraliaMapProps, States, CallbackPayload }
